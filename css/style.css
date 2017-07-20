@@ -86,10 +86,17 @@
   }
   .menu > .container .serachMenu .closeMenu {
     width: 15%;
+    padding: 5px 0;
+  }
+  .menu > .container .serachMenu .closeMenu:before {
     background-image: url('../images/sprite.png');
     content: "";
-    background-position: -362px -185px;
+    background-position: -386px -189px;
     cursor: pointer;
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
   }
   .menu > .container ul {
     flex-direction: column;
