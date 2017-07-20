@@ -3,9 +3,34 @@
 
 @orange: #ff3d24;
 
-@media (max-width: 600px){
+@media (max-width: 900px){
+
+	.containerModal{
+		.modal{
+			width: 100% !important;
+			margin: 0px !important;
+			top: 0px !important;
+			left: 0px !important;
+			padding: 0px !important;
+
+			.contentModal{
+				flex-direction: column;
+
+				.left{
+					width: 100% !important;
+					text-align: center;
+				}
+
+				.right{
+					width: 100% !important;
+					margin:20px;
+				}
+			}
+		}
+	}
 
 	header{
+
 		.container{
 			flex-wrap:wrap;
 			align-items:center;
@@ -466,6 +491,7 @@ header{
 			text-align: center;
 			width: 33%;
 			margin: 0 0 100px 0;
+			cursor: pointer;
 
 			img{
 				width: 100%;
@@ -633,7 +659,7 @@ header{
 	&:before{
 		background-color: rgba(0,0,0,0.5);
 		z-index: 10;
-		position: absolute;
+		position: fixed;
 		top: 0;
 		bottom: 0;
 		left: 0;
@@ -645,13 +671,12 @@ header{
 		border-radius: 3px;
 		moz-border-radius: 3px;
 		webkit-border-radius: 3px;
-		position: absolute;
-		width: 700px;
-		//height: 450px;
+		position: fixed;
+		width: 50%;
 		z-index: 15;
 		top: 50%;
 		left: 50%;
-		margin: -280px 0 0 -350px;
+		margin: -230px 0 0 -25%;
 		background-color: white;
 		padding:30px;
 
@@ -669,8 +694,14 @@ header{
 		.contentModal{
 			display: flex;
 			justify-content: center;
+
 			.left{
 				width: 60%;
+
+				img{
+					max-width: 400px;
+					width: 100%;
+				}
 			}
 
 			.right{
@@ -707,6 +738,7 @@ header{
 					padding:10px 15px;
 					border: 0px;
 					margin: 20px 0 0 0;
+					cursor: pointer;
 
 					&:hover{
 						background-color: lighten(orange, 10%);
